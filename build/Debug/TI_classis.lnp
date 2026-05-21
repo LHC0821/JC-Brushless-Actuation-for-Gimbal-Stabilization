@@ -1,7 +1,7 @@
 -mcpu=cortex-m3 -mthumb -T g:/Work/match/one/TI/code/Tilt_Module/TI_damn/STM32F103C8TX_FLASH.ld -Wl,--gc-sections -Wl,--print-memory-usage --specs=nano.specs --specs=nosys.specs
 -Wl,-Map=./build/Debug/TI_classis.map
--o ./build/Debug/TI_classis.elf ./build/Debug/.obj/Core/Message/usart_send.o
-./build/Debug/.obj/Core/Moudle/JC.o
+-o ./build/Debug/TI_classis.elf ./build/Debug/.obj/Core/JC_Gimbal/JC.o
+./build/Debug/.obj/Core/Message/uart.o
 ./build/Debug/.obj/Core/Src/dma.o
 ./build/Debug/.obj/Core/Src/gpio.o
 ./build/Debug/.obj/Core/Src/main.o

@@ -17,7 +17,7 @@
         "Drivers/CMSIS/Device/ST/STM32F1xx/Include",
         "Drivers/CMSIS/Include",
         "Core/Message",
-        "Core/Moudle"
+        "Core/JC_Gimbal"
     ],
     "libDirs": [],
     "defines": [
@@ -26,7 +26,8 @@
         "STM32F103xB"
     ],
     "sourceList": [
-        "Core/Message/usart_send.c",
+        "Core/JC_Gimbal/JC.c",
+        "Core/Message/uart.c",
         "Core/Src/dma.c",
         "Core/Src/gpio.c",
         "Core/Src/main.c",

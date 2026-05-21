@@ -1,5 +1,5 @@
-./build/Debug/.obj/Core/Message/usart_send.o
-./build/Debug/.obj/Core/Moudle/JC.o
+./build/Debug/.obj/Core/JC_Gimbal/JC.o
+./build/Debug/.obj/Core/Message/uart.o
 ./build/Debug/.obj/Core/Src/dma.o
 ./build/Debug/.obj/Core/Src/gpio.o
 ./build/Debug/.obj/Core/Src/main.o
