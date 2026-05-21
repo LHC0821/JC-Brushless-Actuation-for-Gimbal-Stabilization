@@ -1,0 +1,126 @@
+{
+    "name": "TI_classis",
+    "target": "Debug",
+    "toolchain": "GCC",
+    "toolchainLocation": "C:\\Users\\30609\\.eide\\tools\\gcc_arm",
+    "toolchainCfgFile": "c:\\Users\\30609\\.vscode\\extensions\\cl.eide-3.26.9\\res\\data\\models/arm.gcc.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 32,
+    "rootDir": "g:\\Work\\match\\one\\TI\\code\\Tilt_Module\\TI_damn",
+    "dumpPath": "build\\Debug",
+    "outDir": "build\\Debug",
+    "incDirs": [
+        "Core/Inc",
+        "Drivers/STM32F1xx_HAL_Driver/Inc",
+        "Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+        "Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+        "Drivers/CMSIS/Include",
+        "Core/Message",
+        "Core/Moudle"
+    ],
+    "libDirs": [],
+    "defines": [
+        "DEBUG",
+        "USE_HAL_DRIVER",
+        "STM32F103xB"
+    ],
+    "sourceList": [
+        "Core/Message/usart_send.c",
+        "Core/Src/dma.c",
+        "Core/Src/gpio.c",
+        "Core/Src/main.c",
+        "Core/Src/stm32f1xx_hal_msp.c",
+        "Core/Src/stm32f1xx_it.c",
+        "Core/Src/syscalls.c",
+        "Core/Src/sysmem.c",
+        "Core/Src/system_stm32f1xx.c",
+        "Core/Src/usart.c",
+        "Core/Startup/startup_stm32f103c8tx.s",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 5,
+        "afterBuildTasks": [],
+        "asm-compiler": {
+            "ASM_FLAGS": "-DDEBUG"
+        },
+        "beforeBuildTasks": [],
+        "c/cpp-compiler": {
+            "CXX_FLAGS": "",
+            "C_FLAGS": "",
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "one-elf-section-per-data": true,
+            "one-elf-section-per-function": true,
+            "optimization": "level-debug",
+            "warnings": "all-warnings"
+        },
+        "global": {
+            "$float-abi-type": "hard",
+            "misc-control": [],
+            "not-use-syscalls": true,
+            "output-debug-info": "enable",
+            "use-newlib-nano": true,
+            "toolPrefix": "arm-none-eabi-",
+            "arm-thumb-mode": "thumb",
+            "microcontroller-cpu": "cortex-m3",
+            "microcontroller-fpu": "cortex-m3",
+            "microcontroller-float": "cortex-m3",
+            "$arch-extensions": "",
+            "$clang-arch-extensions": "",
+            "$armlink-arch-extensions": ""
+        },
+        "linker": {
+            "$outputTaskExcludes": [
+                ".bin"
+            ],
+            "LD_FLAGS": "",
+            "LIB_FLAGS": "",
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "$toolName": "gcc",
+            "link-scatter": [
+                "g:/Work/match/one/TI/code/Tilt_Module/TI_damn/STM32F103C8TX_FLASH.ld"
+            ]
+        }
+    },
+    "env": {
+        "workspaceFolder": "g:\\Work\\match\\one\\TI\\code\\Tilt_Module\\TI_damn",
+        "workspaceFolderBasename": "TI_damn",
+        "OutDir": "g:\\Work\\match\\one\\TI\\code\\Tilt_Module\\TI_damn\\build\\Debug",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Debug",
+        "ProjectName": "TI_classis",
+        "ConfigName": "Debug",
+        "ProjectRoot": "g:\\Work\\match\\one\\TI\\code\\Tilt_Module\\TI_damn",
+        "ExecutableName": "g:\\Work\\match\\one\\TI\\code\\Tilt_Module\\TI_damn\\build\\Debug\\TI_classis",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\30609\\.vscode\\extensions\\cl.eide-3.26.9\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.1.1",
+        "EIDE_MSYS": "C:\\Users\\30609\\.eide\\bin\\builder\\msys\\bin",
+        "EIDE_PY3_CMD": "C:\\Users\\30609\\.eide\\bin\\python36\\python3.exe",
+        "ToolchainRoot": "C:\\Users\\30609\\.eide\\tools\\gcc_arm"
+    },
+    "sysPaths": []
+}

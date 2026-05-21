@@ -1,0 +1,6 @@
+tool: GCC
+fileName: 'TI_classis.map'
+elfName: 'TI_classis.elf'
+compilerName: 'Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)'
+compilerFullName: 'arm-none-eabi-gcc.exe (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) 14.3.1 20250623'
+compilerPath: 'C:\Users\30609\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe'
