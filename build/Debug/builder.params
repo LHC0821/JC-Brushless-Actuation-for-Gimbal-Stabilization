@@ -28,6 +28,7 @@
     "sourceList": [
         "Core/JC_Gimbal/JC.c",
         "Core/Message/uart.c",
+        "Core/Message/vision.c",
         "Core/Src/dma.c",
         "Core/Src/gpio.c",
         "Core/Src/main.c",

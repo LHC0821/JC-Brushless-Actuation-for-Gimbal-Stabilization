@@ -28,6 +28,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "JC.h"
+#include "vision.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
