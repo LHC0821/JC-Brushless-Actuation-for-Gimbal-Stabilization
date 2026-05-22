@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -29,6 +30,7 @@
 #include <stdarg.h>
 #include "JC.h"
 #include "vision.h"
+#include "Gimbal_track.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -60,7 +62,13 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if (htim->Instance == TIM1) 
+    {
+        Gimbal_Track_Task(); // 调用云台跟踪任务
+    }
+}
 /* USER CODE END 0 */
 
 /**
@@ -96,14 +104,18 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  JC_Motor_SetZero();
+  // JC_Motor_SetZero();
+  // Vision_Receiver_Init();
+  Gimbal_PID_Init();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-  {
+  { 
 
     /* USER CODE END WHILE */
 

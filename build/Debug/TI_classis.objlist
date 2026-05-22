@@ -1,5 +1,7 @@
+./build/Debug/.obj/Core/JC_Gimbal/GImbal_track.o
 ./build/Debug/.obj/Core/JC_Gimbal/JC.o
 ./build/Debug/.obj/Core/Message/uart.o
+./build/Debug/.obj/Core/Message/vision.o
 ./build/Debug/.obj/Core/Src/dma.o
 ./build/Debug/.obj/Core/Src/gpio.o
 ./build/Debug/.obj/Core/Src/main.o
@@ -8,6 +10,7 @@
 ./build/Debug/.obj/Core/Src/syscalls.o
 ./build/Debug/.obj/Core/Src/sysmem.o
 ./build/Debug/.obj/Core/Src/system_stm32f1xx.o
+./build/Debug/.obj/Core/Src/tim.o
 ./build/Debug/.obj/Core/Src/usart.o
 ./build/Debug/.obj/Core/Startup/startup_stm32f103c8tx.o
 ./build/Debug/.obj/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -21,4 +24,6 @@
 ./build/Debug/.obj/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
 ./build/Debug/.obj/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 ./build/Debug/.obj/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+./build/Debug/.obj/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+./build/Debug/.obj/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 ./build/Debug/.obj/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
